@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Questionnaire Homéopathique</title>
 <!-- Optionnel : Si vous souhaitez suivre les conversions sur ce formulaire -->
+    <!-- Google Tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1HJB1D7MX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L1HJB1D7MX');
+  </script>
+
+  <!-- Script de gestion de l'événement -->
+  <script>
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'purchase', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    }
+  </script>
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1HJB1D7MX"></script>
   <script>
