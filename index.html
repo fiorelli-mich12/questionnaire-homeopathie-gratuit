@@ -39,63 +39,46 @@
   </script>
   -->
  <style>
-   <style>
-  body {
-    background-color: #e8f5e9; /* Couleur rassurante */
-    background-image: url('https://imgur.com/iTqEfLt.jpg');
-    background-size: 150px 150px;
-    background-repeat: repeat;
-    background-blend-mode: soft-light;
-    opacity: 0.5;
+    body {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(230, 245, 241, 0.9)), 
+                url('https://imgur.com/iTqEfLt.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
-    h2 {
-      text-align: center;
-      color: white;
-      background-color: #005f73;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    form {
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input, textarea {
-      width: calc(100% - 20px);
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-      background-color: #fff;
-      color: #333;
-    }
-    input:focus, textarea:focus {
-      border-color: #43a047;
-      outline: none;
-    }
-    button {
-      width: 100%;
-      padding: 15px;
-      background-color: #43a047;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #388e3c;
-    }
+
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #005f73, #2E7D32);
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  form {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #2E7D32, #43a047);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: linear-gradient(90deg, #1e6b30, #388e3c);
+  }
   </style>
 
   <!-- Inclusion de EmailJS -->
